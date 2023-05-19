@@ -124,12 +124,15 @@ def evaluate_prediction(predicted_parameters, true_parameters, reference_teff=No
 
 
 if __name__ == "__main__":
-    # data folder
+    # data folder, input data
     target_csv = os.path.dirname(os.path.abspath(__file__)) + '\\data\\knn\\obs_det_data_Bessell_B_knn.csv'
+    # target folder, where plotted curves are stored
     savepath = os.path.dirname(os.path.abspath(__file__)) + '\\plots\\knn'
 
+    # load of csv file
     df = pd.read_csv(target_csv)
 
+    # name of plotted curve
     df['name'] = df['name'] + '-' + df['filter'] + 'pred_all'  # pre observed
 
     names = df['name']
@@ -137,6 +140,7 @@ if __name__ == "__main__":
         print(f"Selected target: {name}")
         row = df[df['name'] == name]
 
+        # predicted values
         predicted = dict(
             mass_ratio=float(row['pred_q']),
             inclination=float(row['pred_inc']),
@@ -144,6 +148,7 @@ if __name__ == "__main__":
             omega1=float(row['pred_omega1']),
             omega2=float(row['pred_omega2']),
         )
+        # observed values
         observed = dict(
             mass_ratio=float(row['Q']),
             inclination=float(row['Inc']),
