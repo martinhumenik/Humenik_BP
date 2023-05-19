@@ -10,17 +10,17 @@ Vytvorenie datasetov:
 
 -   Pre oddelené systémy: detached_curves_samples_knn.pkl,
     detached_curves_samples_svr.pkl - súbor
-    [**data_detached_curves_loading.ipynb**](data_detached_curves_loading.ipynb)
+    [**data_detached_curves_loading.ipynb**](data_det_curves_load.ipynb)
 
 -   Pre dotykové systémy: overcontact_curves_samples_knn.pkl,
     overcontact_curves_samples_svr.pkl - súbor
-    [**data_overcontact_curves_loading.ipynb**](data_overcontact_curves_loading.ipynb)
+    [**data_overcontact_curves_loading.ipynb**](data_over_curves_load.ipynb)
 
 -   Pôvodné dáta observačných kriviek - všetky súbory v priečinku
     [**krivky**](krivky)
 
 -   Spracované observačné dáta: observed.csv - súbor
-    [**data_observed.ipynb**](data_observed.ipynb)
+    [**data_observed.ipynb**](data_obs.ipynb)
 
 -   [Link](https://mega.nz/file/AC8QxBrY#wWzDR-50neomCTYyusG-va5f3L62QfMsdqo43UJ80uY)
     pre stiahnutie súboru **detached_curves_samples_knn.pkl**
@@ -49,31 +49,31 @@ Modelovanie metódou k-NN:
 
 -   Predikcia vybraných fyzikálnych parametrov syntetických oddelených
     systémov - súbor
-    [**knn_prediction_detached_synthetic.ipynb**](knn_prediction_detached_synthetic.ipynb)
+    [**knn_prediction_detached_synthetic.ipynb**](knn_pred_det_syn.ipynb)
 -   Predikcia vybraných fyzikálnych parametrov syntetických dotykových
     systémov - súbor
-    [**knn_prediction_overcontact_synthetic.ipynb**](knn_prediction_overcontact_synthetic.ipynb)
+    [**knn_prediction_overcontact_synthetic.ipynb**](knn_pred_over_syn.ipynb)
 -   Predikcia vybraných fyzikálnych parametrov observačných oddelených
     systémov, vizualizácia výsledkov - súbor
-    [**knn_prediction_detached_observed.ipynb**](knn_prediction_detached_observed.ipynb)
+    [**knn_prediction_detached_observed.ipynb**](knn_pred_det_obs.ipynb)
 -   Predikcia vybraných fyzikálnych parametrov observačných dotykových
     systémov, vizualizácia výsledkov - súbor
-    [**knn_prediction_overcontact_observed.ipynb**](knn_prediction_overcontact_observed.ipynb)
+    [**knn_prediction_overcontact_observed.ipynb**](knn_pred_over_obs.ipynb)
 
 Modelovanie metódou SVR:
 
 -   Predikcia vybraných fyzikálnych parametrov syntetických oddelených
     systémov - súbor
-    [**svr_prediction_detached_synthetic.ipynb**](svr_prediction_detached_synthetic.ipynb)
+    [**svr_prediction_detached_synthetic.ipynb**](svr_pred_det_syn.ipynb)
 -   Predikcia vybraných fyzikálnych parametrov syntetických dotykových
     systémov - súbor
-    [**svr_prediction_overcontact_synthetic.ipynb**](svr_prediction_overcontact_synthetic.ipynb)
+    [**svr_prediction_overcontact_synthetic.ipynb**](svr_pred_over_syn.ipynb)
 -   Predikcia vybraných fyzikálnych parametrov observačných oddelených
     systémov, vizualizácia výsledkov - súbor
-    [**svr_prediction_detached_observed.ipynb**](svr_prediction_detached_observed.ipynb)
+    [**svr_prediction_detached_observed.ipynb**](svr_pred_det_obs.ipynb)
 -   Predikcia vybraných fyzikálnych parametrov observačných dotykových
     systémov, vizualizácia výsledkov - súbor
-    [**svr_prediction_overcontact_observed.ipynb**](svr_prediction_overcontact_observed.ipynb)
+    [**svr_prediction_overcontact_observed.ipynb**](svr_pred_over_obs.ipynb)
 
 ## Spracovanie predikovaných hodnôt - observačné svetelné krivky
 
