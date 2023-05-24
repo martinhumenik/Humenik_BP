@@ -139,3 +139,6 @@ Modely kontrolovaného učenia k-NN a SVR:
     [Link](https://mega.nz/file/oPlz0BCJ#2kg6WSD6pM90h6l4htMnzBuOlCbjwAU7jsWZ247w0x0)
     na stiahnutie súboru
     [**svr_overcontact_noise_model.pkl**](svr_overcontact_noise_model.pkl)
+
+## ELISa
+Potrebné knižnice a postup, ako si pripraviť prostredie pre systém ELISa je opísaný na https://github.com/mikecokina/elisa.
