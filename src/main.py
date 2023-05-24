@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import traceback
 from copy import copy
-from src.eb_gridmaker_fns import correct_sma, back_radius_potential_primary, back_radius_potential_secondary
+from eb_gridmaker_fns import correct_sma, back_radius_potential_primary, back_radius_potential_secondary
 from operator import xor
 from elisa import BinarySystem, Observer
 from elisa.analytics.binary_fit.shared import r_squared
