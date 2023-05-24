@@ -124,20 +124,23 @@ def evaluate_prediction(predicted_parameters, true_parameters, reference_teff=No
 
 
 if __name__ == "__main__":
-    # data folder
-    target_csv = os.path.dirname(os.path.abspath(__file__)) + '\\data\\target_det_obs_v4_model.csv'
-    savepath = os.path.dirname(os.path.abspath(__file__)) + '\\plots\\observed_det'
+    # data folder, input data
+    target_csv = os.path.dirname(os.path.abspath(__file__)) + '\\data\\knn\\obs_det_data_Bessell_B_knn.csv'
+    # target folder, where plotted curves are stored
+    savepath = os.path.dirname(os.path.abspath(__file__)) + '\\plots\\knn'
 
+    # load of csv file
     df = pd.read_csv(target_csv)
-    # df['name'] = df['id'].astype(str) + "-" + df["filter"] # pre synteticke
-    df['name'] = df['name'] + '-' + df['filter']  # pre observed
-    # names = df['name'].unique() # potrebne v pripade spriemernovania
+
+    # name of plotted curve
+    df['name'] = df['name'] + '-' + df['filter'] + 'pred_all'  # pre observed
 
     names = df['name']
     for name in names:
         print(f"Selected target: {name}")
         row = df[df['name'] == name]
 
+        # predicted values
         predicted = dict(
             mass_ratio=float(row['pred_q']),
             inclination=float(row['pred_inc']),
@@ -145,12 +148,13 @@ if __name__ == "__main__":
             omega1=float(row['pred_omega1']),
             omega2=float(row['pred_omega2']),
         )
+        # observed values
         observed = dict(
-            mass_ratio=float(row['q']),
-            inclination=float(row['inc']),
-            t1_to_t2=float(row['t1_t2']),
-            omega1=float(row['omega1']),
-            omega2=float(row['omega2']),
+            mass_ratio=float(row['Q']),
+            inclination=float(row['Inc']),
+            t1_to_t2=float(row['T2/T1']),
+            omega1=float(row['Omega1']),
+            omega2=float(row['Omega2']),
         )
 
         # predicted = dict(
