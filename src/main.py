@@ -144,7 +144,7 @@ if __name__ == "__main__":
         predicted = dict(
             mass_ratio=float(row['pred_q']),
             inclination=float(row['pred_inc']),
-            t1_to_t2=float(row['pred_t1_t2']),
+            t1_to_t2=float(row['pred_t2_t1']),
             omega1=float(row['pred_omega1']),
             omega2=float(row['pred_omega2']),
         )
